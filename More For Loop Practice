@@ -1,0 +1,20 @@
+function owassoRams(n){
+  var  m = n + 1;
+  tmp = [];
+  for (i = 1; i < m; i++){
+    if (i % 3 === 0 && i % 5 === 0){
+      tmp.push("OwassoRams");
+    }
+    else if(i%3 === 0){
+      tmp.push("Owasso");
+    }
+    else if(i%5 === 0){
+      tmp.push("Rams");
+    }
+    else{
+      tmp.push(i);
+    }
+   
+  }
+  return (tmp);
+}
